@@ -14,6 +14,7 @@
                 company
                 ;; --- Better Editor ---
                 hungry-delete
+                smooth-scrolling
                 swiper
                 counsel
                 smartparens
@@ -50,5 +51,8 @@
 
 ;; 加载主题
 (load-theme 'leuven 1)
+
+;; 顺滑滚动模式
+(smooth-scrolling-mode 1)
 
 (provide 'init-packages)
