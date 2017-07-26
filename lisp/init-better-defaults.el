@@ -1,5 +1,5 @@
 ;; 设置字体
-(set-default-font "Monaco 15")
+;; (set-default-font "Monaco 15")
 
 ;; 关闭启动帮助画面
 (setq inhibit-splash-screen 1)
@@ -48,7 +48,7 @@
 (display-time-mode 1)
 
 ;;默认的路径为 ~/
-(setq default-directory "c:/Users/larry618/")
+;;(setq default-directory "c:/Users/larry618/")
 
 ;;让 Emacs 可以直接打开和显示图片。
 (setq auto-image-file-mode t)
@@ -78,10 +78,4 @@
 (with-eval-after-load 'dired
     (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
 
-;; Windows 中文卡顿
-(dolist (charset '(kana han cjk-misc bopomofo))
-    (set-fontset-font (frame-parameter nil 'font) charset
-        (font-spec :family "Microsoft YaHei" :size 18)))
-		
-		
 (provide 'init-better-defaults)

@@ -1,7 +1,8 @@
 
+
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/") t)
+             '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
 
 
@@ -54,5 +55,8 @@
 
 ;; 顺滑滚动模式
 (smooth-scrolling-mode 1)
+
+;;括号自动匹配
+(smartparens-global-mode)
 
 (provide 'init-packages)

@@ -7,6 +7,8 @@
 ;; 这一行代码，将函数 open-init-file 绑定到 <f2> 键上
 (global-set-key (kbd "<f3>") 'open-init-file)
 
+(global-set-key (kbd "<f5>") 'eval-buffer)
+
 ;; 下面的代码用于配置 Occur Mode 使其默认搜索当前被选中的或者在光标下的字符串
 (defun occur-dwim ()
   "Call `occur' with a sane default."
