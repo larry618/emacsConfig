@@ -2,7 +2,8 @@
 
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/") t)
+;;             '("melpa" . "http://melpa.org/packages/") t)
+             '("melpa" . "http://elpa.emacs-china.org/melpa/") t)
 (package-initialize)
 
 
@@ -21,6 +22,7 @@
                 smartparens
                 expand-region
                 popwin
+                neotree
                 ;; --- Theme ---
                 leuven-theme
                 ) "Default packages")

@@ -1,5 +1,5 @@
 ;; 设置字体
-;; (set-default-font "Monaco 15")
+(set-default-font "Monaco 15")
 
 ;; 关闭启动帮助画面
 (setq inhibit-splash-screen 1)

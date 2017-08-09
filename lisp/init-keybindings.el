@@ -9,6 +9,10 @@
 
 (global-set-key (kbd "<f5>") 'eval-buffer)
 
+(global-set-key (kbd "<f8>") 'neotree-toggle)
+
+(global-set-key (kbd "<f7>") 'toggle-truncate-lines)
+
 ;; 下面的代码用于配置 Occur Mode 使其默认搜索当前被选中的或者在光标下的字符串
 (defun occur-dwim ()
   "Call `occur' with a sane default."
