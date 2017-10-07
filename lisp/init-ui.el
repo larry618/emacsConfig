@@ -13,7 +13,6 @@
                             (font-spec :family "Hiragino Sans GB" :size 18))))
     (progn
       (setq monospaced 0)
-      (set-frame-font "Monaco:pixelsize=15")
       (dolist (charset '(han kana symbol cjk-misc bopomofo))
         (set-fontset-font (frame-parameter nil 'font)
                           charset
@@ -23,4 +22,5 @@
 
 
 (global-set-key (kbd "<f9>") 'toggle-monospaced-font)
+
 (provide 'init-ui)

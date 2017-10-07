@@ -74,6 +74,10 @@
 
 (put 'dired-find-alternate-file 'disabled nil)
 
+;; Emacs mac port 会交换按键
+(setq mac-option-modifier 'meta)
+(setq mac-command-modifier 'super)
+
 ;; 延迟加载
 (with-eval-after-load 'dired
     (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
