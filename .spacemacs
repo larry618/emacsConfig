@@ -358,6 +358,9 @@ you should place your code here."
 
   (global-set-key (kbd "<f9>") 'toggle-monospaced-font)
 
+  (setq powerline-default-separator 'slant)
+  (setq powerline-image-apple-rgb t)
+
   ;; ----------------------- org ------------------------
   ;; 代码高亮
   (setq org-src-fontify-natively t)
